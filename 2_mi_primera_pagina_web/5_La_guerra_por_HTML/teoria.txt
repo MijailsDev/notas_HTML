@@ -1,0 +1,21 @@
+1989 --> Tim Beiners Lee
+
+1993 --> Mosaic: primer navegador grafico
+
+1994 --> Netscape:
+                salio a la bolsa
+
+                similar a -> Nov 2022 -> ChatGPT
+                
+                salio Amazon
+
+1995 --> Internet Explorer
+
+1995 --> W3C : consorcio de la web(Pusioeron las reglas)
+            www: World Wide Web
+
+            2000 -> W3C : html debe morir, crear XHTMl
+
+            2004 -> WhatWQ: rebeldes crear HTML5
+
+la DOCUMENTACION oficial de HTML esta en: WhatWQ            

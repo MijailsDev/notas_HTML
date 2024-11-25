@@ -1,0 +1,22 @@
+DOM
+D: Document
+O: Object
+M: Model
+
+Esto es el DOM:
+
+HTML:
+    head:
+        meta
+        title
+        link
+    body:
+        main:
+            h1
+            p
+        header:
+            nav
+        footer:
+
+elementos: en resumen viene a ser las etiquetas
+ 
