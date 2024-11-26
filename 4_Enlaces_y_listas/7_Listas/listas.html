@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Listas</h1> 
+    <a href="/4_Enlaces_y_listas/7_Listas/"> Ir al Home</a>   
+    <!-- Hay dos tipos de listas
+        1. Listas ordenadas <ol></ol> Usan numeros o letras
+        2. Listas no ordenadas <ul></ul> Usan viñetas
+
+        para cualquiera de estas listas, los items (es decir cada elemento
+        de la lista) usa la etiqueta <li></li>
+
+        ol -> Ordered list
+        ul -> Unordered list
+        li -> List item 
+        
+    
+    -->
+
+   
+    <!-- 
+    el atributo TYPE: es para usar el tipo de simbolo 
+    ejem:
+        type="1"    : numeros narutales
+        type="i"    : numeros romanos
+        type="I"    : numeros romanos
+        type="A"    : desde A
+        type="a"    : desde B
+
+    
+    el atributo START: configurar en que comienza la lista
+    ejem:    
+        start="5"   : comienza desde el 5
+
+    -->
+        <h2>Primera mitad de semana</h2>
+    <ol type="a">
+        <li>Lunes
+            <ul>
+                <li>Estudiar HTML
+                    <ul>
+                        <li>Enlaces</li>
+                        <li>Listas</li>
+                    </ul>
+                </li>
+                <li>Buscar ofertas de trabajo</li>
+            </ul>
+        </li>
+        <li>Martes</li>
+        <li>Miercoles</li>
+    </ol>
+
+    <h2>Segunda mitad de semana</h2>
+    <ol start="4" type="a"> <!-- puedes combinarlos para que comiencen desde la 'd'-->
+        <li>Jueves</li>
+        <li>Viernes</li>
+        <li>Sabado</li>
+    </ol>
+
+    <h2>Listas de definicion</h2>
+    <!-- 
+    
+        dl -> Definition list
+        dt -> definition term
+        dd -> definition description
+    -->
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+
+        <dt>Etiqueta</dt>
+        <dd>Son los nombres de los elementos HTML 
+            y comienzan con el simbolo &lt;
+        </dd>
+    </dl>
+
+
+
+</body>
+</html>

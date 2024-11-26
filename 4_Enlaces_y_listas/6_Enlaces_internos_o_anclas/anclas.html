@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Anclas: son como unos enlaces dentro de nuestra propia pagina 
+        ejem: un texto muy largo con varios capitulos
+        como usar:
+            1. en cualquier etiqueta agregarle un indice con id="nombre_de_ID"
+            2. para ir a un capitulo especifico usamos #, 
+                ejem: <a href="#nombre_de_ID"> Ir al capitulo 12</a>
+     -->     
+
+    <h1>Anclas en HTML</h1>
+    <a href="/4_Enlaces_y_listas/6_Enlaces_internos_o_anclas/"> Ir a Home</a>
+    <section id="indice">
+        <h2>Indice</h2>
+        <a href="#cap1">Capitulo 1</a> <br>
+        <a href="#cap2">Capitulo 2</a> <br>
+        <a href="#cap3">Capitulo 3</a> <br>
+    </section>
+
+    <section id="cap1">
+        <h2>Capitulo 1</h2>
+        <a href="#indice">
+            <p>Ir al indice</p>
+        </a> 
+        <p>
+            El término wikinota 1​ (palabra que proviene del hawaiano wiki, 'rápido')2​ alude al nombre que recibe una comunidad virtual, cuyas páginas son editadas directamente desde el navegador, donde los mismos usuarios crean, modifican, corrigen o eliminan contenidos que, habitualmente, son compartidos por cualquier otro usuario. No tiene por qué ser necesariamente un sitio en la web, puesto que hay wikis instalables para uso en el escritorio de un computador u ordenador personal o que pueden portarse en un llavero USB que lleven un entorno LAMP como, por ejemplo, XAMPP.3​
+        </p>
+    </section>
+    
+    <section id="cap2">
+        <h2>Capitulo 2</h2>
+        <a href="#indice">
+            <p>Ir al indice</p>
+        </a>
+        
+        <p>
+            Los textos o «páginas wiki» tienen títulos únicos. Si se escribe el título de una página wiki en algún sitio de la wiki entre corchetes dobles ([[Título de la página]]), esta palabra se convierte en un «enlace web» a la página correspondiente. De este modo, en una página sobre «alpinismo» puede haber una palabra como «piolet» o «brújula» que esté marcada como palabra perteneciente a un título de página wiki. La mayor parte de las implementaciones de wikis indican en el localizador de recursos uniforme (URL) de la página el propio título de la página wiki (en Wikipedia, ocurre así: <https://es.wikipedia.org/wiki/Alpinismo> es el URL de la página wiki Alpinismo), lo que facilita el uso y la aplicación general del enlace fuera del propio sitio web. Además, esto permite formar en muchas ocasiones una coherencia terminológica, y genera una ordenación natural del contenido.[cita requerida]
+        </p>
+    </section>
+    
+    <section id="cap3">
+        <h2>Capitulo 3</h2>
+        <a href="#indice">
+            <p>Ir al indice</p>
+        </a>
+        <p>
+            Su última tarea, a la que le debe su fama hasta el momento, ha sido la creación de enciclopedias colectivas, género al que pertenece Wikipedia. Existen muchas otras aplicaciones más cercanas a la coordinación de informaciones y acciones, o la puesta en común de conocimientos o textos dentro de grupos. La mayor parte de las wikis actuales conservan un historial de cambios que permite recuperar fácilmente cualquier estado anterior y ver qué usuario hizo todo cambio, lo cual facilita el mantenimiento conjunto y el control de usuarios nocivos. Habitualmente, sin necesidad de una revisión previa, se actualiza el contenido que muestra la página wiki editada.[cita requerida]
+        </p>
+    </section>
+</body>
+</html>
