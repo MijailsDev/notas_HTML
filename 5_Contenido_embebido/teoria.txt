@@ -1,0 +1,7 @@
+# Contenido embebido
+    Es aquel contenido que no es parte del 
+    codigo HTML
+    
+    ejem:
+        * video
+        * imagen 
