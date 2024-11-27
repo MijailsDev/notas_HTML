@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 5 - Contenido embebido</title>
+</head>
+<body>
+    <h1>hola EDteam</h1>
+    <!-- 
+        Existen dos tipos de imagenes
+
+        1. Vectoriales  :Son matematicos (se crean con formulas)
+                         y no tienen resolucion, ed decir, no se
+                         pixelean en ningun nivel de zoom
+
+        2. De mapa de bits  :son muchos cuadrados de colores (pixeles)
+                             que juntos forman una imagen. A mas pixeles
+                             mas calidad de la imagen. A cierto nivel de
+                             zoom se pixelean (se ven los pixeles)
+    
+    -->
+
+    <!-- Formatos de imagenes
+     
+            svg -> vectorial
+
+            jpg, jpeg -> para fotografias
+
+            png -> para transparencias o colores planos
+
+            gif -> son para animaciones (menos de 10 segundos)
+
+            webp -> combinan lo mejor de jpg y png con menos peso
+
+            avif -> tiene mejor compresion que webp(reduce peso y mantiene la calidad de img)
+
+            heif -> el formato de Apple para fotorgrafias, 
+                    no es recomendable para web
+    -->
+    <!-- 
+        En HTML las imagenes se insertan con la etiqueta <img src="">
+            scr=""  :link o ruta de la imagen 
+            alt=""  :aqui se pone una decripcion referente a la imagen
+    -->
+    
+    <!-- Generador de imagenes :
+            * Firefly 
+            * Bing image creator
+    -->
+
+    <img src="https://ae01.alicdn.com/kf/S9377d15a71df4139b732a64cb3aa0b32d/Disney-Mini-figuras-de-Anime-de-Mickey-y-Friends-Kit-de-garaje-de-pato-Donald-perif.jpg" alt="pato donald de internet">
+    <img src="img/donald.jpg" alt="Imagen de la cara del pato donald">
+    <img src="https://media.tenor.com/Wf9KZbfvJFYAAAAM/money-donald-duck.gif" alt="animacion del pato Donald contando su dinero">
+
+    <picture>
+        <source srcset="/5_Contenido_embebido/4_Picture/img/donald.jpg">
+        <source srcset="img/donald.png">
+        <img src="img/donald.jpg" alt="cara del pato donald">
+        <!-- <img src="/5_Contenido_embebido/4_Picture/img/donald.jpg" alt=""> -->
+    </picture>
+
+    <!-- figure :muestra cualquier elemeto que rompa el flujo del contenido -->
+
+    <figure>
+        <img src="img/donald.jpg" alt="cara del pato donald">
+       <figcaption>Imagen del pato donal para EDteam</figcaption> 
+    </figure>
+
+    <!-- Audio y Video -->
+    <!-- 
+    
+    controls    : para que aparesca los controles de play de volumen 
+    poster=""      : para agregar una miniatura
+    -->
+    <video src="media/descargar savefrom.mp4" width="600" controls poster="img/miniatura.png"></video>
+
+    <audio src="media/audio.mp3" controls></audio>
+
+</body>
+</html>
