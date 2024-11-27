@@ -45,12 +45,12 @@
 
     <h2>Mas tipos de inputs</h2>
 
-    <form action="recibido.html">
+    <form action="recibido.html" autocomplete="on">
 
         <fieldset>
             <legend>Que quieres estudiar</legend>
             <label>
-                <input type="checkbox" name="cursos">
+                <input type="checkbox" name="cursos" checked >
                 HTML
             </label>
             <label>
@@ -67,15 +67,15 @@
         <fieldset>
             <legend>Que quieres jugar</legend>
             <label>
-                <input type="radio" name="cursos">
+                <input type="radio" name="game" required>
                 Valorant
             </label>
             <label>
-                <input type="radio" name="cursos">
+                <input type="radio" name="game">
                 GTA
             </label>
             <label>
-                <input type="radio" name="cursos">
+                <input type="radio" name="game    ">
                 Among us
             </label>
         </fieldset>
@@ -86,7 +86,7 @@
                 <optgroup label="Sudamerica">
                     <option value="pe">Peru</option>
                     <option value="ar">Argentina</option>
-                    <option value="co">Colombia</option>
+                    <option value="co" selected>Colombia</option>
                 </optgroup>
 
                 <optgroup label="Norteamerica">
@@ -100,7 +100,30 @@
         <!-- Textarea   : sirve para poner mucho contenido (texto largo) -->
         <label for="comment">Deja tu comentario</label>
         <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        <input type="submit">
     </form>
+
+    <!-- Atributos de Formularios
+
+            "checked" : sirve para selecionar una checkbox o radio por default.
+                        >> se usan en inputs de tipo checkbox y radio
+
+            "selected  : sirve para seleccionar una opcion por default.
+                        >> se usan <en></en>
+    
+            "required" : sirve para poner un campo obligatorio.
+                        >> se usan en los inputs de tipo checkbox y radio.
+
+            "readonly" : sirve para poner un campo de solo lectura.
+                        >> se usan en inputs de tipo text, password, email, url, tel, search,                            range, datetime, month, week, time,
+
+            "autocomplete" : sirve para poner un campo de solo lectura.
+                        >> se usan en formularios para que no se vea el texto que se escribe.
+    
+    
+    
+    -->
+    
 
 </body>
 
