@@ -15,6 +15,7 @@ header{
   .menu a.selected{
     background: steelblue;
     color: #fff;
+    
   }
   
   .title{
@@ -41,4 +42,9 @@ header{
   }
   .logo{
     width: 6em;
+  }
+  #main iframe{
+    height: 45em;
+    width: 30em;
+ 
   }
