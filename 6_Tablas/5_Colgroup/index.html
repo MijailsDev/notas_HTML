@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 6 - Tablas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid red;
+            padding: .25em .5em;
+        }
+        tfoot{
+            background: yellow;
+        }
+        thead{
+            color: red;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola EDteam</h1>
+    <!-- TABLA:
+    
+        Se usa la etiqueta <table></table> para encerrar
+        a toda la tabla
+
+        Las filas se marcan con <tr></tr> (table row)
+
+        Las celdas son las divisiones de cada fila y se marcan con <td></td> (table data)
+
+    -->
+
+    <table>
+        <tr>
+            <td></td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miercoles</td>
+        </tr>
+        <tr>
+            <td>Ingresos</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Egresos</td>
+            <td>75</td>
+            <td>220</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Saldo</td>
+            <td>25</td>
+            <td>20</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Final</td>
+            <td></td>
+            <td></td>
+            <td>5</td>
+        </tr>
+        
+    </table>
+
+    <!-- 
+        Estructura completa de una tabla
+        <table>
+            <caption></caption>
+            <th>                    # t head : la cabecera -> la primera fila
+                <td></td>
+                <td></td>
+            </th>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+    
+    -->
+    <h2>Mi horario de estudios</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>Photoshop</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>PHP</td>
+                <td>CSS</td>
+                <td>HTML</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>Total de cursos</td>
+                <td></td>
+                <td></td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+
+    <!-- Agrupar celdas 
+     
+        Se usan los atributos
+
+        colspan = n
+        rowspan = n
+
+        Donde n es la cantidad de columnas o filas que se van a combinar
+        o agrupar
+        
+    -->
+     <h2>Agrupar celdas</h2>
+    <table>
+        <tr>
+            <td></td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miercoles</td>
+        </tr>
+        <tr>
+            <td>Ingresos</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Egresos</td>
+            <td>75</td>
+            <td>220</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Saldo</td>
+            <td>25</td>
+            <td>20</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td colspan="3">Final</td>
+            <td>5</td>
+        </tr>
+        
+    </table>
+
+    <h2>Agrupar celdas (2)</h2>
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="2">HTML</td>
+                <td colspan="2">CSS</td>
+                
+                <td rowspan="2">JavaScript</td>
+            </tr>
+            <tr>
+                
+                <td>PHP</td>
+                <td>Photoshop</td>
+                
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de cursos</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+    <!-- ColGroup
+            Sirve para poder agrupar las columnas
+    -->
+    <h2>Colgroup</h2>
+
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col style="background: yellow;">
+        </colgroup>
+        <tr>
+            <td></td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miercoles</td>
+        </tr>
+        <tr>
+            <td>Ingresos</td>
+            <td>100</td>
+            <td>200</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Egresos</td>
+            <td>75</td>
+            <td>220</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Saldo</td>
+            <td>25</td>
+            <td>20</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td colspan="3">Final</td>
+            <td>5</td>
+        </tr>
+        
+    </table>
+
+
+
+</body>
+</html>
