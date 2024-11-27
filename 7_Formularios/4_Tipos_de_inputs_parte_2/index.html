@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 7 - Formularios</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+        fieldset{
+            margin-bottom: 10px;
+            color: red;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modulo 7 - Formularios</h1>
+    <!-- Estructura basica de un formulario -->
+    <!-- <form action="recibido.html">
+         <div><input placeholder="Usuario"></div>
+         <div><input placeholder="Contraseña"></div>
+        <button>Ingresar</button>
+    </form> -->
+
+
+    <!-- Estructura un poco mas avanzada -->
+     <!-- 
+        en <input> :
+                placeholder : sirve para poner un texto-decorativo dentro del input
+                value       : sirve para dar un valor-texto inicial
+        
+        en <label>  : s
+                for     : sirve para poner el ID del input para tener una conexion-relacion
+     -->
+
+   <h2>Mas tipos de inputs</h2>       
+
+   <form action="recibido.html">
+        
+    <fieldset>
+        <legend>Que quieres estudiar</legend>
+        <label>
+            <input type="checkbox" name="cursos">
+            HTML
+        </label>
+        <label>
+            <input type="checkbox" name="cursos">
+            CSS
+        </label>
+        <label>
+            <input type="checkbox" name="cursos">
+            JavaScript
+        </label>
+    </fieldset>
+
+    <!-- Solo puedes escoger uno de todas las opciones -->
+    <fieldset>
+        <legend>Que quieres jugar</legend>
+        <label>
+            <input type="radio" name="cursos">
+            Valorant
+        </label>
+        <label>
+            <input type="radio" name="cursos">
+            GTA
+        </label>
+        <label>
+            <input type="radio" name="cursos">
+            Among us
+        </label>
+    </fieldset>
+
+    <!-- select : se usa para hacer una lista -->
+    <select name="pais" id="">
+        <optgroup label="Sudamerica">
+            <option value="pe">Peru</option>
+            <option value="ar">Argentina</option>
+            <option value="co">Colombia</option>
+        </optgroup>
+        
+        <optgroup label="Norteamerica">
+            <option value="">Estados Unidos</option>
+            <option value="">canada</option>
+        </optgroup>
+        
+    </select>
+    <!-- Textarea   : sirve para poner mucho contenido -->
+    <textarea name="" id=""></textarea>
+   </form>
+   
+</body>
+</html>

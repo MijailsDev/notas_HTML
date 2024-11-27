@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 7 - Formularios</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+        fieldset{
+            margin-bottom: 10px;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modulo 7 - Formularios</h1>
+    <!-- Estructura basica de un formulario -->
+    <!-- <form action="recibido.html">
+         <div><input placeholder="Usuario"></div>
+         <div><input placeholder="Contraseña"></div>
+        <button>Ingresar</button>
+    </form> -->
+
+
+    <!-- Estructura un poco mas avanzada -->
+     <!-- 
+        en <input> :
+                placeholder : sirve para poner un texto-decorativo dentro del input
+                value       : sirve para dar un valor-texto inicial
+        
+        en <label>  : s
+                for     : sirve para poner el ID del input para tener una conexion-relacion
+     -->
+
+    <form action="recibido.html">
+        <fieldset> <!-- fieldset : sirve para agrupar-->
+            <legend>Tus datos</legend>
+            <div>
+                <label for="username">Usuario</label>   <!-- estan conectados el label con el input que tienen su ID -->
+                <input placeholder="Usuario" id="username" value="Alvaro">
+            </div>
+            <div>
+                <label>
+                    Contraseña
+                    <input placeholder="Contraseña">
+                </label>
+            </div>
+        </fieldset>
+
+
+        <fieldset> <!-- fieldset : sirve para agrupar-->
+            <legend>Tus gustos</legend>
+            <div>
+                <label for="music">Musica favorita</label>   <!-- estan conectados el label con el input que tienen su ID -->
+                <input placeholder="Usuario" id="music" value="Reggeton">
+            </div>
+            <div>
+                <label>
+                    Plato favorito
+                    <input placeholder="Plato favorito">
+                </label>
+            </div>
+        </fieldset>
+        
+        <!-- 2 Modos de enviar un formulario
+                1. Button :
+                        <button>Ingresar</button>
+
+                2. Input :       
+                        <input type="submit">    
+                        <input type="submit" value="Ingresar">    
+        -->
+       
+        <!-- Tipos de inputs -->
+         <h2>Tipos de Inputs</h2>
+        <form action="recibido.html">
+            <label>
+                Text
+                <input type="text">
+            </label>
+            <label>
+                Number
+                <input type="number">
+            </label>
+            <label>
+                Date
+                <input type="date">
+            </label>
+            <label>
+                Email
+                <input type="email">
+            </label>
+            <label>
+                Tel
+                <input type="tel">
+            </label>
+            <label>
+                Color
+                <input type="color">
+            </label>
+            <label>
+                Password
+                <input type="password">
+            </label>
+            <label>
+                Range
+                <input type="range" min="10" max="100" step="10">
+            </label>
+
+            <input type="submit" value="Enviar datos">
+
+        </form>
+
+
+   </form>
+</body>
+</html>
